@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container1{
+    width: 1000px;
+    height: 500px;
+    margin: 0 auto;
+    background-color: rgb(236, 56, 101);
+    font-size: 80px;
+    line-height: 150%;
+    color: aliceblue;
+    text-align: center;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    /* justify-content: flex-start; 수평 정렬 : 좌측 */
+}
+
+
+/* 하단 */
+.item1{
+    width: 300px;
+    /* height: 200px; */
+    background-color: rgb(126, 224, 27);
+}
+.item2{
+    width: 300px;
+    /* height: 300px; */
+    background-color: rgb(83, 143, 22);
+}
+.item3{
+    width: 300px;
+    /* height: 200px; */
+    background-color: rgb(32, 57, 6);
+}
+.container1 .item{
+    flex-grow: 1;
+    flex-basis: 100px;
+}
+.container1 .item:nth-child(1){
+    flex-grow: 1;
+}
+.container1 .item:nth-child(2){
+    flex-grow: 2;
+}
+.container1 .item:nth-child(3){
+    flex-grow: 2;
+}
